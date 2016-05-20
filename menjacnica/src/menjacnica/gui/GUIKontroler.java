@@ -40,7 +40,7 @@ public class GUIKontroler {
 
 	public static void obrisiValutu(Valuta valuta) {
 		try {
-			glavniProzor.sistem.obrisiValutu(valuta);
+			sistem.obrisiValutu(valuta);
 
 			glavniProzor.prikaziSveValute();
 		} catch (Exception e1) {
@@ -61,7 +61,7 @@ public class GUIKontroler {
 			valuta.setKupovni(Double.parseDouble(kupovni));
 			valuta.setSrednji(Double.parseDouble(srednji));
 
-			glavniProzor.sistem.dodajValutu(valuta);
+			sistem.dodajValutu(valuta);
 
 			glavniProzor.prikaziSveValute();
 
